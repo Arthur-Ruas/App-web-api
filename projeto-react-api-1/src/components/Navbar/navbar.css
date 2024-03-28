@@ -1,0 +1,32 @@
+.navbar{
+    
+}
+
+.navbar__list{
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 1rem 1.5rem;
+}
+
+.navbar__item{
+    padding: .5rem 1rem;
+}
+
+.navbar__link{
+    color: #000;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.navbar__link:hover{
+    background-color: #5715db;
+    color: #fff;
+    padding: .5rem 1rem;
+}
+
+
+
