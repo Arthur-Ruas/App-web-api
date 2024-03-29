@@ -1,0 +1,23 @@
+.livros{
+    background-color: #eee;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+    margin: 10px 0;
+}
+
+.livros__title{
+    font-size: 1.5rem;
+}
+
+.livros__title > span{
+    color: #5715db;
+    font-weight: 1000;
+}
+
+.livros__image{
+    width: 350px;
+}

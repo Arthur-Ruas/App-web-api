@@ -1,12 +1,12 @@
 import React from 'react';
-
-import Navbar from '../../components/Navbar/Navbar';
+import './home.css'
 
 function Home() {
   return (
-    <div>
-        <h1>Home</h1>
-    </div>
+    <section className='home'>
+        <h1 className='home__title'>Bem vindo ao app <span>Libri</span></h1>
+        <p>Comece a gerênciar seus livros agora mesmo!</p>
+    </section>
   )
 }
 

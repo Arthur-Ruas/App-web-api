@@ -1,0 +1,23 @@
+.home{
+    background-color: #eee;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+    margin: 10px 0;
+}
+
+.home__title{
+    font-size: 1.5rem;
+}
+
+.home__title > span{
+    color: #5715db;
+    font-weight: 1000;
+}
+
+.home__image{
+    width: 350px;
+}

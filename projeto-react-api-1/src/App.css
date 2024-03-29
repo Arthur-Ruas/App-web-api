@@ -10,12 +10,12 @@
   transition: .2s;
 }
 
-.html, body, #root{
-  min-height: 100vh;
-}
-
 ul{
   list-style: none;
+}
+
+button{
+  border: none;
 }
 
 .App {
