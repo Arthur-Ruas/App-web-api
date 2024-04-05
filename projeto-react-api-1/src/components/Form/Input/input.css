@@ -1,15 +1,10 @@
 .input{ 
+    position: relative;
     display: flex;
-    flex-direction: column;  
+    flex-direction: column; 
     gap: 5px; 
     margin-bottom: 20px;       
 } 
-
-.input{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-}
 
 .input > label{
     position: absolute;
