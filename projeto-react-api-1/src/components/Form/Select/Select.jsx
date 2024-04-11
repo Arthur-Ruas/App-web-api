@@ -5,7 +5,7 @@ function Select({ text, name, options, handlerOnChange, value }) {
   return (
     <div className='select'>
       <label htmlFor={name}>{text}</label>
-      <select name={name} id={name}>
+      <select name={name} id={name} onChange={handlerOnChange}>
         <option>Selecione...</option>
         {
           options.map((option) =>{

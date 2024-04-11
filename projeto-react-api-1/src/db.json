@@ -1,25 +1,46 @@
 {
-    "books": [],
-    "categories":[
-        {
-            "id": 1,
-            "name": "Ficção científica"
-        },
-        {
-            "id": 2,
-            "name": "Back-end"
-        },
-        {
-            "id": 3,
-            "name": "Front-end"
-        },
-        {
-            "id": 4,
-            "name": "Banco de dados"
-        },
-        {
-            "id": 5,
-            "name": "Cloud computing"
-        }
-    ]
+  "books": [
+    {
+      "id": "fdb6",
+      "nome_livro": "a",
+      "nome_autor": "a",
+      "descricao": "a",
+      "category": {
+        "id": "2",
+        "category": "Back-end"
+      }
+    },
+    {
+      "id": "2527",
+      "nome_livro": "dsa",
+      "nome_autor": "dsa",
+      "descricao": "dsa",
+      "category": {
+        "id": "1",
+        "category": "Ficção científica"
+      }
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Ficção científica"
+    },
+    {
+      "id": "2",
+      "name": "Back-end"
+    },
+    {
+      "id": "3",
+      "name": "Front-end"
+    },
+    {
+      "id": "4",
+      "name": "Banco de dados"
+    },
+    {
+      "id": "5",
+      "name": "Cloud computing"
+    }
+  ]
 }
