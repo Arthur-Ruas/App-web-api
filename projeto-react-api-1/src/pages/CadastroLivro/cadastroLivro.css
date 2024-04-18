@@ -10,6 +10,13 @@
     margin: 10px 0;
 }
 
+.cadastro-livro__header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 4px;
+}
+
 .cadastro-Livro__title{
     font-size: 1.5rem;
 }

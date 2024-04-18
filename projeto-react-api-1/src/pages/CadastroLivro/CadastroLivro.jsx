@@ -62,8 +62,8 @@ function CadastroLivro() {
 
     ).then(
       (data)=>{
-        console.log(data)
-        navigate('/livros')
+        console.log(data);
+        navigate('/livros', {state: 'Livro cadastrado com sucesso!'});
       }
     ).catch(
       (error)=>{
@@ -79,7 +79,10 @@ function CadastroLivro() {
 
   return (
     <section className='cadastro-Livro'>
+      <div className='cadastro-livro__header'>
         <h1 className='cadastro-Livro__title'>Cadastro de <span>Livros</span></h1>
+        <p>Cadastre seus livros preferidos aqui!</p>
+      </div>
         <form className='cadastro-livro__form' onSubmit={submit}>
           <div>
             <Input type='text' name='nome_livro' id='nome_livro'  text='Titulo do livro' handlerOnChange={handlerChangeBook}/>

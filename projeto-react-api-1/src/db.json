@@ -19,6 +19,36 @@
         "id": "1",
         "category": "Ficção científica"
       }
+    },
+    {
+      "id": "2693",
+      "nome_livro": "Teste",
+      "nome_autor": "Teste",
+      "descricao": "Teste",
+      "category": {
+        "id": "3",
+        "category": "Front-end"
+      }
+    },
+    {
+      "id": "816a",
+      "nome_livro": "teste",
+      "nome_autor": "teste",
+      "descricao": "teste",
+      "category": {
+        "id": "2",
+        "category": "Back-end"
+      }
+    },
+    {
+      "id": "e3fb",
+      "nome_livro": "a",
+      "nome_autor": "a",
+      "descricao": "a",
+      "category": {
+        "id": "2",
+        "category": "Back-end"
+      }
     }
   ],
   "categories": [
