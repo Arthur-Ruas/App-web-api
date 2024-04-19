@@ -2,6 +2,7 @@ import React from 'react';
 import { useLocation } from 'react-router-dom';
 import './livros.css';
 import Message from '../../components/Message/Message';
+import CardBook from '../../components/CardBook/CardBook';
 
 function Livros() {
 
@@ -19,6 +20,9 @@ function Livros() {
       <div className='livros__header'>
         <h1 className='livros__title'>Aqui serão listados os <span>Livros!</span></h1>
         <p>Seus livros preferidos aparecerão aqui!</p>
+        <div>
+          <CardBook/>
+        </div>
       </div>
       {
         message && (
