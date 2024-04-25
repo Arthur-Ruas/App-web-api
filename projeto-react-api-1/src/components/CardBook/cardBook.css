@@ -1,16 +1,16 @@
 .card-book{
+    background-color: #fff;
     width: 100%;
-    margin: 0.5%;
     padding: 1em;
-    border: 1px solid #7a7a7a;
     border-radius: 5px;
 }
 
 .card-book h4{
-    background-color: #222;
-    color: #ffbb33;
+    background-color: #5715db;
+    color: #fff;
     padding: 0.4em;
     margin-bottom: 1.3em;
+    border-radius: 3px;
     font-size: 1.3em;
 }
 

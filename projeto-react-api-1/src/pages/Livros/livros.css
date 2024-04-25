@@ -5,6 +5,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 40px;
     padding: 2rem;
     margin: 10px 0;
 }

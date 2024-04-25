@@ -1,26 +1,6 @@
 {
   "books": [
     {
-      "id": "fdb6",
-      "nome_livro": "a",
-      "nome_autor": "a",
-      "descricao": "a",
-      "category": {
-        "id": "2",
-        "category": "Back-end"
-      }
-    },
-    {
-      "id": "2527",
-      "nome_livro": "dsa",
-      "nome_autor": "dsa",
-      "descricao": "dsa",
-      "category": {
-        "id": "1",
-        "category": "Ficção científica"
-      }
-    },
-    {
       "id": "2693",
       "nome_livro": "Teste",
       "nome_autor": "Teste",
@@ -31,23 +11,23 @@
       }
     },
     {
-      "id": "816a",
-      "nome_livro": "teste",
-      "nome_autor": "teste",
-      "descricao": "teste",
+      "id": "bf0e",
+      "nome_livro": "Teste",
+      "nome_autor": "Teste",
+      "descricao": "Teste",
       "category": {
         "id": "2",
         "category": "Back-end"
       }
     },
     {
-      "id": "e3fb",
-      "nome_livro": "a",
-      "nome_autor": "a",
-      "descricao": "a",
+      "id": "07b0",
+      "nome_livro": "Teste-livro",
+      "nome_autor": "Teste-autor",
+      "descricao": "Teste-descrição",
       "category": {
-        "id": "2",
-        "category": "Back-end"
+        "id": "4",
+        "category": "Banco de dados"
       }
     }
   ],

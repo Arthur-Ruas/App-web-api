@@ -23,15 +23,10 @@ function CadastroLivro() {
       }
     ).then(
       (response) => response.json()
-      
     ).then(
-      (data) =>{
-        setCategories(data)
-      }
+      (data) => setCategories(data)
     ).catch(
-      (error) =>{
-        console.log(error);
-      }
+      (error) => console.log(error)
     )
   }, []);
 

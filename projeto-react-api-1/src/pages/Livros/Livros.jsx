@@ -1,10 +1,32 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import './livros.css';
+
 import Message from '../../components/Message/Message';
+import Container from '../../components/Container/Container';
 import CardBook from '../../components/CardBook/CardBook';
 
 function Livros() {
+
+  const [booksArray, setBooksArray]  = useState([]);
+
+  useEffect(() =>{
+    fetch(
+      'http://localhost:5000/books', 
+      { 
+        method: 'GET',
+        headers: {
+          'Content-Type':'application/json'
+        }
+      }
+    ).then(
+      (response) => response.json()
+    ).then(
+      (data) => {setBooksArray(data)}
+    ).catch(
+      (error) => console.log(error)
+    )
+  }, []);
 
   const location = useLocation();
   let message = '';
@@ -20,9 +42,6 @@ function Livros() {
       <div className='livros__header'>
         <h1 className='livros__title'>Aqui serão listados os <span>Livros!</span></h1>
         <p>Seus livros preferidos aparecerão aqui!</p>
-        <div>
-          <CardBook/>
-        </div>
       </div>
       {
         message && (
@@ -30,6 +49,18 @@ function Livros() {
             msg={message}
             type="success"/>
         )
+      }
+
+      {
+        booksArray.map((book) =>{
+          return(
+            <CardBook 
+              id={book.id}
+              livro={book.nome_livro}
+              autor={book.nome_autor}
+              categoria={book.category.category}/>
+          );   
+        })
       }
     </section>
   )
