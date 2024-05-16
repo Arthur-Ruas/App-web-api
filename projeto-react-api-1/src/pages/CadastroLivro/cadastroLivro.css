@@ -17,6 +17,7 @@
     gap: 4px;
 }
 
+
 .cadastro-Livro__title{
     font-size: 1.5rem;
 }
@@ -26,23 +27,31 @@
     font-weight: 1000;
 }
 
+.cadastro-livro__form{
+    background-color: #fff;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 3rem 2rem;
+    border-radius: 10px;
+}
+
 .cadastro-livro__form > div{
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
 .cadastro-livro__button-submit{
-    width: 100%;
-    padding: .5rem;
+    background-color: #5715db;
+    color: #fff;
+    width: fit-content;
+    padding: .5rem 2rem;
     border-radius: 5px;
     font-size: 1rem;
     border: 1px solid #5715db;
     cursor: pointer;
-}
-
-.cadastro-livro__button-submit:hover{
-    background-color: #5715db;
-    color: #fff;
-    border: 1px solid #5715db;
 }

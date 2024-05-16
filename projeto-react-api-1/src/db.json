@@ -1,33 +1,13 @@
 {
   "books": [
     {
-      "id": "2693",
-      "nome_livro": "Teste",
-      "nome_autor": "Teste",
-      "descricao": "Teste",
-      "category": {
-        "id": "3",
-        "category": "Front-end"
-      }
-    },
-    {
-      "id": "bf0e",
-      "nome_livro": "Teste",
-      "nome_autor": "Teste",
-      "descricao": "Teste",
+      "id": "4112",
+      "nome_livro": "A Metamorfose",
+      "nome_autor": "Franz Kafka",
+      "descricao": "Único livro que eu li",
       "category": {
         "id": "2",
         "category": "Back-end"
-      }
-    },
-    {
-      "id": "07b0",
-      "nome_livro": "Teste-livro",
-      "nome_autor": "Teste-autor",
-      "descricao": "Teste-descrição",
-      "category": {
-        "id": "4",
-        "category": "Banco de dados"
       }
     }
   ],

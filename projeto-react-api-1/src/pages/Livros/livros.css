@@ -29,3 +29,10 @@
 .livros__image{
     width: 350px;
 }
+
+.livros__wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

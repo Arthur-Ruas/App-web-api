@@ -9,6 +9,7 @@ import CardBook from '../../components/CardBook/CardBook';
 function Livros() {
 
   const [booksArray, setBooksArray]  = useState([]);
+  const [deleteMessage, setDeleteMessage] = useState('');
 
   useEffect(() =>{
     fetch(
@@ -26,12 +27,27 @@ function Livros() {
     ).catch(
       (error) => console.log(error)
     )
-  }, []);
+  }, [deleteMessage]);
+
+  function removeBooks(id){
+    fetch(`http://localhost:5000/books/${id}`, 
+      { 
+        method: 'DELETE',
+        headers: {
+          'Content-Type':'application/json'
+        },
+      }
+    ).then(
+      (response) => response.json()
+    ).then(
+      (data) => {setDeleteMessage('Livro excluído com sucesso!')}
+    ).catch(
+      (error) => console.log(error)
+    )
+  }
 
   const location = useLocation();
   let message = '';
-
-  console.log('Location state: ' + location.state)
 
   if(location.state){
     message = location.state;
@@ -50,18 +66,28 @@ function Livros() {
             type="success"/>
         )
       }
-
       {
-        booksArray.map((book) =>{
-          return(
-            <CardBook 
-              id={book.id}
-              livro={book.nome_livro}
-              autor={book.nome_autor}
-              categoria={book.category.category}/>
-          );   
-        })
+        deleteMessage && (
+          <Message
+            msg={deleteMessage}
+            type="success"/>
+        )
       }
+      <div className='livros__wrapper'>
+        {
+          booksArray.map((book) =>{
+            return(
+              <CardBook 
+                id={book.id}
+                key={book.id}
+                livro={book.nome_livro}
+                autor={book.nome_autor}
+                categoria={book.category.category}
+                handlerRemove={removeBooks}/>
+            );   
+          })
+        }
+      </div>    
     </section>
   )
 }

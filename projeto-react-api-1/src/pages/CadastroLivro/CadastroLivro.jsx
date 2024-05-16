@@ -32,7 +32,6 @@ function CadastroLivro() {
 
   function handlerChangeBook(event){
     setBook({...book, [event.target.name] : event.target.value});
-    console.log(book)
   }
 
   function handlerChangeCategory(event){
@@ -85,7 +84,7 @@ function CadastroLivro() {
             <Input type='text' name='descricao' id='descricao' text='Descrição' handlerOnChange={handlerChangeBook}/>
             <Select name='categoria_id' text='Categoria' options={categories} handlerOnChange={handlerChangeCategory}/>   
           </div>    
-          <button className='cadastro-livro__button-submit' type='submit' value='Criar'>Criar</button>
+          <button className='cadastro-livro__button-submit' type='submit' value='Criar'>Criar Livro</button>
         </form>
     </section>
   )
