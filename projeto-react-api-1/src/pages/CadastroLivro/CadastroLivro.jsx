@@ -40,7 +40,6 @@ function CadastroLivro() {
       category: event.target.options[event.target.selectedIndex].text
     }});
   }
-  console.log(book)
 
   function createBook(book){
     fetch('http://localhost:5000/books', 
@@ -77,15 +76,15 @@ function CadastroLivro() {
         <h1 className='cadastro-Livro__title'>Cadastro de <span>Livros</span></h1>
         <p>Cadastre seus livros preferidos aqui!</p>
       </div>
-        <form className='cadastro-livro__form' onSubmit={submit}>
-          <div>
-            <Input type='text' name='nome_livro' id='nome_livro'  text='Titulo do livro' handlerOnChange={handlerChangeBook}/>
-            <Input type='text' name='nome_autor' id='nome_autor' text='Autor' handlerOnChange={handlerChangeBook}/>
-            <Input type='text' name='descricao' id='descricao' text='Descrição' handlerOnChange={handlerChangeBook}/>
-            <Select name='categoria_id' text='Categoria' options={categories} handlerOnChange={handlerChangeCategory}/>   
-          </div>    
-          <button className='cadastro-livro__button-submit' type='submit' value='Criar'>Criar Livro</button>
-        </form>
+      <form className='cadastro-livro__form' onSubmit={submit}>
+        <div>
+          <Input type='text' name='nome_livro' id='nome_livro'  text='Titulo do livro' handlerOnChange={handlerChangeBook}/>
+          <Input type='text' name='nome_autor' id='nome_autor' text='Autor' handlerOnChange={handlerChangeBook}/>
+          <Input type='text' name='descricao' id='descricao' text='Descrição' handlerOnChange={handlerChangeBook}/>
+          <Select name='categoria_id' text='Categoria' options={categories} handlerOnChange={handlerChangeCategory}/>   
+        </div>    
+        <button className='cadastro-livro__button-submit' type='submit' value='Criar'>Criar Livro</button>
+      </form>
     </section>
   )
 }

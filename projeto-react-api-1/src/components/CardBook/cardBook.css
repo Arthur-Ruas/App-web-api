@@ -63,9 +63,14 @@
     cursor: pointer;
 }
 
-.card-book_actions > a:hover, 
 .card-book_actions > button:hover{
     background-color: #FF4733;
     color: #FFF;
     border: 1px solid #FF4733;
+}
+
+.card-book_actions > a:hover{
+    background-color: #155724;
+    color: #FFF;
+    border: 1px solid #155724;
 }

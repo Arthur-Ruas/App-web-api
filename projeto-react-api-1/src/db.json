@@ -1,13 +1,13 @@
 {
   "books": [
     {
-      "id": "4112",
+      "id": "c7f7",
       "nome_livro": "A Metamorfose",
       "nome_autor": "Franz Kafka",
-      "descricao": "Único livro que eu li",
+      "descricao": "Sim",
       "category": {
-        "id": "2",
-        "category": "Back-end"
+        "id": "1",
+        "category": "Ficção científica"
       }
     }
   ],

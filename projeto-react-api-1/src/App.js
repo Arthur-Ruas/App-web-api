@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home/Home';
 import Livros from './pages/Livros/Livros';
 import CadastroLivro from './pages/CadastroLivro/CadastroLivro';
+import EditarLivro from './pages/EditarLivro/EditarLivro';
 import Navbar from './components/Navbar/Navbar';
 import Container from './components/Container/Container';
 
@@ -18,6 +19,7 @@ function App() {
               <Route index element={<Home/>}/>
               <Route path='/livros' element={<Livros/>}/>
               <Route path='/cadastrolivro' element={<CadastroLivro/>}/>
+              <Route path='/editarLivro/:id' element={<EditarLivro/>}/>
             </Route>
           </Routes>
         </Container>
