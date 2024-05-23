@@ -4,7 +4,17 @@
       "id": "c7f7",
       "nome_livro": "A Metamorfose",
       "nome_autor": "Franz Kafka",
-      "descricao": "Sim",
+      "descricao": "Livro muito bacana",
+      "category": {
+        "id": "1",
+        "category": "Ficção científica"
+      }
+    },
+    {
+      "id": "f95d",
+      "nome_livro": "O Alienista",
+      "nome_autor": "Machado de Assis",
+      "descricao": "Livro de doido oido",
       "category": {
         "id": "1",
         "category": "Ficção científica"

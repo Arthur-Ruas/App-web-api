@@ -52,22 +52,19 @@ function CadastroLivro() {
       }
     ).then(
       (response)=>response.json()
-
     ).then(
       (data)=>{
         console.log(data);
         navigate('/livros', {state: 'Livro cadastrado com sucesso!'});
       }
     ).catch(
-      (error)=>{
-        console.log(error)
-      }
+      (error)=>console.log(error) 
     )
   }
 
   function submit(event){
-    event.preventDefault()
-    createBook(book)
+    event.preventDefault();
+    createBook(book);
   }
 
   return (
